@@ -1,29 +1,29 @@
-//  Un programa de una sola línea que tire un alerta y diga "Hola Mundo"
+// 1- Un programa de una sola línea que tire un alerta y diga "Hola Mundo"
 alert("Hello World");
 
-//Escribir por pantalla "Hola Mundo"
+// 2- Escribir por pantalla "Hola Mundo"
 document.write("Hello World </br>");
 
-//Escribir por pantalla la suma de dos números.
+// 3- Escribir por pantalla la suma de dos números.
 document.write(3+5 + "</br>");
 
-// Pedir al usuario que ingrese su nombre y luego escribir "Hola + nombre de usuario."
+// 4- Pedir al usuario que ingrese su nombre y luego escribir "Hola + nombre de usuario."
 let usr = prompt("Ingrese su nombre de Usuario:");
 document.write("Hola " + usr + "</br>");
 
-// Pedir un número y luego otro, escribir el resultado de la sumado de los números.
+// 5- Pedir un número y luego otro, escribir el resultado de la sumado de los números.
 let a = parseInt(prompt("A) Ingrese un número: "));
 let b = parseInt(prompt("B) Ingrese otro número: "));
 document.write("El resultado de la suma de los dos números proporcionados es: " + (a + b) + "</br>");
 
-// ¿Cuál es el mayor de dos números? (reutilizamos variables a + b)
+// 6- ¿Cuál es el mayor de dos números? (reutilizamos variables a + b)
 if (a>b) {
     document.write("El número mayor es: " + a + "</br>");    
 } else {
     document.write("El número mayor es: " + b + "</br>");
 }
 
-// Un programa de tres lineas que pida 3 numeros y escriba en la pantalla el mayor de ellos.
+// 7- Un programa de tres lineas que pida 3 numeros y escriba en la pantalla el mayor de ellos.
 
 alert("Ahora el sistema le pedira tres numeros diferentes para comparar  cuál es el mayor.")
 let c = parseInt(prompt("C) Ingrese un número: "));
@@ -31,10 +31,36 @@ let d = parseInt(prompt("D) Ingrese otro número: "));
 let e = parseInt(prompt("E) Ingrese un número: "));
 
 if ( c > d && c > e) {
-    document.write( "El número mayor es: " + c);
+    document.write( "El número mayor es: " + c + "</br>");
 } else if(d > c && d > e){
-    document.write("El número mayor es: " + d);
+    document.write("El número mayor es: " + d + "</br>");
 } else if (e > c && e > d){
-    document.write("El número mayor es: " + e);
+    document.write("El número mayor es: " + e + "</br>");
 }
 
+// 8- Un programa que pida un número y diga si es divisible por 2 
+alert("Ahora el programa evaluara si un número es divisible por 2");
+// Declaramos variable para almacenar el número que ingresará el usuario
+let numEvaluar = prompt("Ingrese el número a evaluar: ");
+// Declaramos una variable para almacenar el resultado de la división
+let resultado;
+// Un número es divisible por otro siempre y cuando el resto sea exactamente 0
+resultado = numEvaluar%2;
+if (resultado === 0) {
+    document.write("El número " + numEvaluar + " es divisible por 2" + "</br>");
+} else {
+    document.write("El número " + numEvaluar + " no es divisible por 2" + "</br>");
+}
+
+// 9- Programa que pide una frase y cuenta las veces que se repite la letra "a"
+alert("El programa le pedirá que ingrese una frase y contará las veces que se repite la letra a.")
+let frase = prompt("Ingrese una frase: ");
+let cantLetra = 0;
+
+for (let i = 0; i < frase.length; i++) {
+    if (frase[i] === 'a') {
+        cantLetra++;
+    }
+}
+document.write("Usted escribió esta frase: " + "</br>" + frase + "</br>")
+document.write("La cantidad de veces que se repite la letra a es" + cantLetra + "</br>");
