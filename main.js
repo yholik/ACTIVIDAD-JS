@@ -5,7 +5,7 @@ alert("Hello World");
 document.write("Hello World </br>");
 
 // 3- Escribir por pantalla la suma de dos números.
-document.write(3+5 + "</br>");
+document.write(3 + 5 + "</br>");
 
 // 4- Pedir al usuario que ingrese su nombre y luego escribir "Hola + nombre de usuario."
 let usr = prompt("Ingrese su nombre de Usuario:");
@@ -55,6 +55,7 @@ if (resultado === 0) {
 // 9- Programa que pide una frase y cuenta las veces que se repite la letra "a"
 alert("El programa le pedirá que ingrese una frase y contará las veces que se repite la letra a.")
 let frase = prompt("Ingrese una frase: ");
+// Variable contador, incrementa cada vez que se encuentra la letra a.
 let cantLetra = 0;
 
 for (let i = 0; i < frase.length; i++) {
@@ -63,4 +64,46 @@ for (let i = 0; i < frase.length; i++) {
     }
 }
 document.write("Usted escribió esta frase: " + "</br>" + frase + "</br>")
-document.write("La cantidad de veces que se repite la letra a es" + cantLetra + "</br>");
+document.write("La cantidad de veces que se repite la letra a es " + cantLetra + "</br>");
+
+// 10- Programa que escribe las vocales que aparecen en la frase
+// Declaramos la variable de tipo array donde se almacenaran las vocales encontradas
+let vocales = [];
+
+for (let i = 0; i < frase.length; i++) {
+    if (frase[i] === 'a' || frase[i] === 'e' || frase[i] === 'i' || frase[i] === 'o' || frase[i] === 'u') {
+        vocales.push(frase[i]);
+    }
+} document.write("Las vocales que aparecen en la frase son: " + vocales + "</br>");
+
+// 11- Programa que escriba cuántas de las letras que tiene son vocales
+/* El programa del punto 10 ya almacena en su array vocales[] las letras, por lo cual declararemos una variable para saber
+la longitud de ese array y así saber la cantidad de vocales.*/
+let longVocales = vocales.length;
+document.write("La cantidad de vocales que tiene esta frase es: " + longVocales + "</br>");
+
+// 12- Programa que escriba cuantas veces aparece cada vocal
+// Declaramos una variable de tipo array para cada vocal. 
+let vocalA = 0;
+let vocalE = 0;
+let vocalI = 0;
+let vocalO = 0;
+let vocalU = 0;
+
+for (let i = 0; i < frase.length; i++) {
+    if (frase[i].toLowerCase === 'a') {
+        vocalA++;
+    } else if (frase[i].toLowerCase() === 'e') {
+        vocalE++;
+    } else if (frase[i].toLowerCase() === 'i') {
+        vocalI++;
+    } else if (frase[i].toLowerCase() === 'o') {
+        vocalO++;
+    } else if (frase[i].toLowerCase() === 'u') {
+        vocalU++;
+    }
+} document.write("La vocal A aparece: " + vocalA + "</br>" +
+    "La vocal E aparece: " + vocalE + "</br>" +
+    "La vocal I aparece: " + vocalI + "</br>" +
+    "La vocal O aparece: " + vocalO + "</br>" +
+    "La vocal U aparece: " + vocalU + "</br>");
