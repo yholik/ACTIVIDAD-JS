@@ -1,6 +1,6 @@
 // 1- Un programa de una sola línea que tire un alerta y diga "Hola Mundo"
 alert("Hello World");
-
+/*
 // 2- Escribir por pantalla "Hola Mundo"
 document.write("Hello World </br>");
 
@@ -77,8 +77,9 @@ for (let i = 0; i < frase.length; i++) {
 } document.write("Las vocales que aparecen en la frase son: " + vocales + "</br>");
 
 // 11- Programa que escriba cuántas de las letras que tiene son vocales
-/* El programa del punto 10 ya almacena en su array vocales[] las letras, por lo cual declararemos una variable para saber
-la longitud de ese array y así saber la cantidad de vocales.*/
+El programa del punto 10 ya almacena en su array vocales[] las letras, por lo cual declararemos una variable para saber
+la longitud de ese array y así saber la cantidad de vocales.
+
 let longVocales = vocales.length;
 document.write("La cantidad de vocales que tiene esta frase es: " + longVocales + "</br>");
 
@@ -107,3 +108,43 @@ for (let i = 0; i < frase.length; i++) {
     "La vocal I aparece: " + vocalI + "</br>" +
     "La vocal O aparece: " + vocalO + "</br>" +
     "La vocal U aparece: " + vocalU + "</br>");
+
+    */
+
+// 13 - Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o
+// 7(sólo hay que comprobar si lo es por uno de los cuatro)
+
+
+/* alert("El programa comprobará si el número ingresado es divisible por alguno de estos: 2, 3, 5, 7");
+
+let numEvaluar2 = prompt("Ingrese el número a evaluar: ");
+let resultado2;
+let flagControl = true;
+let nDivisibles = [];
+do {
+    resultado2 = numEvaluar2 % 2;
+    if (resultado2 === 0) {
+        nDivisibles.push("2");
+    }
+    resultado2 = numEvaluar2 % 3;
+    if (resultado2 === 0) {
+        nDivisibles.push("3");
+    }
+    resultado2 = numEvaluar2 % 5;
+    if (resultado2 === 0) {
+        nDivisibles.push("5");
+    }
+    resultado2 = numEvaluar2 % 7;
+    if (resultado2 === 0) {
+        nDivisibles.push("7");
+    }
+    document.write("El número ingresado es divisible por: " + nDivisibles);
+    flagControl = false;    
+} while (flagControl); */
+
+let dato = 123 + "1" ;
+console.log(dato);
+
+
+
+
